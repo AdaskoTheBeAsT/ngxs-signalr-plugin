@@ -1,0 +1,13 @@
+{
+  "name": "@adaskothebeast/ngxs-signalr-plugin",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^12.2.0",
+    "@angular/core": "^12.2.0",
+    "@microsoft/signalr": "5.0.10",
+    "@ngxs/store": "^3.7.2"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}
