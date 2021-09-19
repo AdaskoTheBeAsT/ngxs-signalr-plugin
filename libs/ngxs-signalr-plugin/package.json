@@ -1,10 +1,26 @@
 {
   "name": "@adaskothebeast/ngxs-signalr-plugin",
-  "version": "0.0.1",
+  "version": "0.9.0",
+  "description": "Bind server SignalR events to Ngxs store actions.",
+  "author": "Adam Pluciński <adaskothebeast@gmail.com>",
+  "homepage": "https://github.com/AdaskoTheBeAsT/ngxs-signalr-plugin",
+  "keywords": [
+    "ngxs",
+    "angular",
+    "SignalR"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdaskoTheBeAsT/ngxs-signalr-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AdaskoTheBeAsT/ngxs-signalr-plugin/issues"
+  },
+  "license": "MIT",
   "peerDependencies": {
     "@angular/common": "^12.2.0",
     "@angular/core": "^12.2.0",
-    "@microsoft/signalr": "5.0.10",
+    "@microsoft/signalr": "^5.0.10",
     "@ngxs/store": "^3.7.2"
   },
   "dependencies": {
