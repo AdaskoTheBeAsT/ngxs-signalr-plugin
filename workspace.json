@@ -1,61 +1,6 @@
 {
   "version": 2,
   "projects": {
-    "ngxs-signalr-plugin": {
-      "projectType": "library",
-      "root": "libs/ngxs-signalr-plugin",
-      "sourceRoot": "libs/ngxs-signalr-plugin/src",
-      "prefix": "adaskothebeast",
-      "targets": {
-        "build": {
-          "executor": "@nrwl/angular:package",
-          "outputs": ["dist/libs/ngxs-signalr-plugin"],
-          "options": {
-            "project": "libs/ngxs-signalr-plugin/ng-package.json"
-          },
-          "configurations": {
-            "production": {
-              "tsConfig": "libs/ngxs-signalr-plugin/tsconfig.lib.prod.json"
-            },
-            "development": {
-              "tsConfig": "libs/ngxs-signalr-plugin/tsconfig.lib.json"
-            }
-          },
-          "defaultConfiguration": "production"
-        },
-        "test": {
-          "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/ngxs-signalr-plugin"],
-          "options": {
-            "jestConfig": "libs/ngxs-signalr-plugin/jest.config.js",
-            "passWithNoTests": true
-          }
-        },
-        "lint": {
-          "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": [
-              "libs/ngxs-signalr-plugin/src/**/*.ts",
-              "libs/ngxs-signalr-plugin/src/**/*.html"
-            ]
-          }
-        }
-      }
-    }
-  },
-  "cli": {
-    "defaultCollection": "@nrwl/angular"
-  },
-  "generators": {
-    "@nrwl/angular:application": {
-      "linter": "eslint",
-      "unitTestRunner": "jest"
-    },
-    "@nrwl/angular:library": {
-      "linter": "eslint",
-      "unitTestRunner": "jest"
-    },
-    "@nrwl/angular:component": {}
-  },
-  "defaultProject": "ngxs-signalr-plugin"
+    "ngxs-signalr-plugin": "libs/ngxs-signalr-plugin"
+  }
 }

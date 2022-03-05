@@ -31,3 +31,8 @@ import { NgxsSignalRPluginModule } from '@adaskothebeast/ngxs-signal-plugin';
 })
 export class AppModule {}
 ```
+
+## Compatibility
+
+- Angular 13.2.x
+- SignalR 6.0.x

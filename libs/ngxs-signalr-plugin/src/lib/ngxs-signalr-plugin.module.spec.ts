@@ -1,5 +1,5 @@
 describe('global', () => {
-  test('allways pass', () => {
+  test('always pass', () => {
     expect(true).toEqual(true);
   });
 });

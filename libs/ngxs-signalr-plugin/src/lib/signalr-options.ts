@@ -27,7 +27,7 @@ export interface SignalROptions {
   transportType?: HttpTransportType;
 
   /**
-   *
+   * Http connection options.
    */
   httpConnectionOptions?: IHttpConnectionOptions;
 
@@ -47,19 +47,29 @@ export interface SignalROptions {
   automaticReconnect?: boolean;
 
   /**
-   *
+   * Hub protocol options.
    */
   protocol?: IHubProtocol;
 
   /**
-   * The property name to distigunish this type for the store.
+   * The property name to distinguish this type for the store.
    * Default: 'type'
    */
   typeKey?: string;
 
+  /**
+   * Logging options
+   */
   logging?: string | LogLevel | ILogger;
 
+  /**
+   * Keep alive interval in milliseconds.
+   */
   keepAliveIntervalInMilliseconds?: number;
+
+  /**
+   * Server timeout in milliseconds.
+   */
   serverTimeoutInMilliseconds?: number;
 }
 
