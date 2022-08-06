@@ -1,6 +1,7 @@
+/* eslint-disable */
 const reportPath = './.reports/';
 
-module.exports = {
+export default {
   displayName: 'ngxs-signalr-plugin',
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],

@@ -12,23 +12,17 @@
   },
   "tasksRunnerOptions": {
     "default": {
-      "runner": "@nrwl/workspace/tasks-runners/default",
+      "runner": "nx/tasks-runners/default",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"],
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ],
         "parallel": 1
       }
     }
-  },
-  "targetDependencies": {
-    "build": [
-      {
-        "target": "build",
-        "projects": "dependencies"
-      }
-    ]
-  },
-  "cli": {
-    "defaultCollection": "@nrwl/angular"
   },
   "generators": {
     "@nrwl/angular:application": {
@@ -41,5 +35,13 @@
     },
     "@nrwl/angular:component": {}
   },
-  "defaultProject": "ngxs-signalr-plugin"
+  "defaultProject": "ngxs-signalr-plugin",
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "targetDefaults": {
+    "build": {
+      "dependsOn": [
+        "^build"
+      ]
+    }
+  }
 }

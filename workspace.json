@@ -2,5 +2,6 @@
   "version": 2,
   "projects": {
     "ngxs-signalr-plugin": "libs/ngxs-signalr-plugin"
-  }
+  },
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json"
 }

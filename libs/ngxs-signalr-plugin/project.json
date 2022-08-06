@@ -1,6 +1,6 @@
 {
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "library",
-  "root": "libs/ngxs-signalr-plugin",
   "sourceRoot": "libs/ngxs-signalr-plugin/src",
   "prefix": "adaskothebeast",
   "targets": {
@@ -24,7 +24,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/libs/ngxs-signalr-plugin"],
       "options": {
-        "jestConfig": "libs/ngxs-signalr-plugin/jest.config.js",
+        "jestConfig": "libs/ngxs-signalr-plugin/jest.config.ts",
         "passWithNoTests": true
       }
     },
