@@ -34,5 +34,5 @@ export class AppModule {}
 
 ## Compatibility
 
-- Angular 13.2.x
+- Angular 14.1.x
 - SignalR 6.0.x
