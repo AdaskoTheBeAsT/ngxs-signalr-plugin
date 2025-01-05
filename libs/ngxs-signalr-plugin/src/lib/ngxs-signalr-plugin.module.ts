@@ -1,10 +1,5 @@
 import { CommonModule } from '@angular/common';
-import {
-  APP_INITIALIZER,
-  InjectionToken,
-  ModuleWithProviders,
-  NgModule,
-} from '@angular/core';
+import { InjectionToken, ModuleWithProviders, NgModule, inject, provideAppInitializer } from '@angular/core';
 import { HttpTransportType, JsonHubProtocol } from '@microsoft/signalr';
 
 import { SignalRHandler } from './signalr-handler';
@@ -46,12 +41,10 @@ export class NgxsSignalrPluginModule {
           useFactory: signalrOptionsFactory,
           deps: [NGXS_SIGNALR_USER_OPTIONS],
         },
-        {
-          provide: APP_INITIALIZER,
-          useFactory: noop,
-          deps: [SignalRHandler],
-          multi: true,
-        },
+        provideAppInitializer(() => {
+        const initializerFn = (noop)(inject(SignalRHandler));
+        return initializerFn();
+      }),
       ],
     };
   }
